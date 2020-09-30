@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/ClickTotal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/ClickUp1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/resetAll"
+        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        android:id="@+id/Click1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/Click2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ClickUp1"
+        app:layout_constraintTop_toBottomOf="@id/resetAll" />
+    <TextView
+        android:id="@+id/Click2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/Click3"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ClickUp2"
+        app:layout_constraintTop_toBottomOf="@id/Click1"/>
+    <TextView
+        android:id="@+id/Click3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toTopOf="@id/Click4"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ClickUp3"
+        app:layout_constraintTop_toBottomOf="@id/Click2"/>
+    <TextView
+        android:id="@+id/Click4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="0"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/ClickUp4"
+        app:layout_constraintTop_toBottomOf="@id/Click3"/>
+    <Button
+        android:id="@+id/ClickUp1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/ClickUp2"
+        app:layout_constraintLeft_toRightOf="@id/Click1"
+        app:layout_constraintRight_toLeftOf="@id/reset1"
+        app:layout_constraintTop_toBottomOf="@id/resetAll"
+        />
+
+    <Button
+        android:id="@+id/ClickUp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/ClickUp3"
+        app:layout_constraintLeft_toRightOf="@id/Click2"
+        app:layout_constraintRight_toLeftOf="@id/reset2"
+        app:layout_constraintTop_toBottomOf="@id/ClickUp1"
+        />
+
+    <Button
+        android:id="@+id/ClickUp3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toTopOf="@id/ClickUp4"
+        app:layout_constraintLeft_toRightOf="@id/Click3"
+        app:layout_constraintRight_toLeftOf="@id/reset3"
+        app:layout_constraintTop_toBottomOf="@id/ClickUp2"
+        />
+
+    <Button
+        android:id="@+id/ClickUp4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/Click4"
+        app:layout_constraintRight_toLeftOf="@id/reset4"
+        app:layout_constraintTop_toBottomOf="@id/ClickUp3"
+        />
+
+    <Button
+        android:id="@+id/reset1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@id/reset2"
+        app:layout_constraintLeft_toRightOf="@id/ClickUp1"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/resetAll"
+        />
+
+    <Button
+        android:id="@+id/reset2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@id/reset3"
+        app:layout_constraintLeft_toRightOf="@id/ClickUp2"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset1"
+        />
+
+    <Button
+        android:id="@+id/reset3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toTopOf="@id/reset4"
+        app:layout_constraintLeft_toRightOf="@id/ClickUp3"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset2" />
+
+    <Button
+        android:id="@+id/reset4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/ClickUp4"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/reset3"/>
+
+
+    <Button
+        android:id="@+id/resetAll"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="RESET ALL"
+        app:layout_constraintBottom_toTopOf="@id/reset1"
+        app:layout_constraintLeft_toRightOf="@id/ClickTotal"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
